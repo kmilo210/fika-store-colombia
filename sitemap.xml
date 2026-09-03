@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Página principal -->
+  <url>
+    <loc>https://fikastore.store/</loc>
+  </url>
+
+  <!-- Categorías -->
+  <url>
+    <loc>https://fikastore.store/categoria.html?cat=cuadros-parejas</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/categoria.html?cat=cuadros-albumes</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/categoria.html?cat=cuadros-mama</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/categoria.html?cat=cuadros-papa</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/categoria.html?cat=cuadros-diplomas</loc>
+  </url>
+
+  <!-- Productos con seo: true -->
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1001</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1002</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1003</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1004</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1005</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1006</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1007</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1008</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1009</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1010</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1011</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1012</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1013</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1014</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1015</loc>
+  </url>
+
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1017</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1018</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1019</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=1020</loc>
+  </url>
+
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-01</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-02</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-03</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-04</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-05</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-06</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-07</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-08</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-09</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-10</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-11</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-12</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-13</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-14</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=mama-15</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=diploma-mama-01</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=diploma-mama-02</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=diploma-mama-foto</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=papa-01</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=papa-02</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=papa-03</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=papa-04</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=papa-05</loc>
+  </url>
+
+  <url>
+    <loc>https://fikastore.store/producto.html?id=papa-06</loc>
+  </url>
+
+</urlset>

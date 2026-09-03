@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Carrito de compras — Fika Store</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header" id="site-header"></header>
+
+  <div id="mobile-nav-overlay-container"></div>
+  <nav class="mobile-nav-panel" id="mobile-nav-panel"></nav>
+
+  <main class="layout-with-sidebar">
+    <nav class="sidebar-nav" id="sidebar-nav"></nav>
+
+    <div class="cart-page">
+      <h1 class="cart-title">Tu carrito de compras</h1>
+
+      <div id="cart-empty" class="empty-state">
+        Tu carrito está vacío. <a href="index.html">Ir al catálogo</a>
+      </div>
+
+      <div id="cart-success-message" class="cart-success-message">
+        ¡Tu pedido se envió por WhatsApp! Si el chat no se abrió automáticamente, revisa que tu navegador permita ventanas emergentes.
+      </div>
+
+      <div id="cart-items" class="cart-items-list"></div>
+
+      <div id="cart-checkout-section" class="cart-checkout-grid">
+
+        <!-- Datos de entrega -->
+        <div class="cart-form-card">
+          <h2>Datos de entrega</h2>
+
+          <div class="form-field">
+            <label for="input-nombre">Nombre Completo de quién recibe *</label>
+            <input type="text" id="input-nombre" />
+            <span class="field-error" id="error-input-nombre"></span>
+          </div>
+
+
+          <div class="form-field">
+            <label for="input-telefono">Teléfono *</label>
+            <input type="tel" id="input-telefono" />
+            <span class="field-error" id="error-input-telefono"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="input-ciudad">Ciudad *</label>
+            <select id="input-ciudad"></select>
+            <span class="field-error" id="error-input-ciudad"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="input-direccion">Dirección *</label>
+            <input type="text" id="input-direccion" />
+            <span class="field-error" id="error-input-direccion"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="input-barrio">Barrio *</label>
+            <input type="text" id="input-barrio" />
+            <span class="field-error" id="error-input-barrio"></span>
+          </div>
+
+          <div class="form-field">
+            <label for="input-observaciones">Observaciones (opcional)</label>
+            <textarea id="input-observaciones" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Forma de pago + resumen -->
+        <div class="cart-summary-card">
+          <h2>Forma de pago</h2>
+
+          <div class="delivery-note">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/>
+            </svg>
+            <span>Entrega de 2 a 5 días hábiles</span>
+          </div>
+
+          <div class="radio-group">
+            <span class="radio-group-label">Pago de los Productos *</span>
+            <label class="radio-option">
+              <input type="radio" name="pago-productos" value="anticipado" />
+              <span>Pago Previo a la Elaboración</span>
+            </label>
+            <p class="payment-method-description" id="pago-productos-description"></p>
+            <span class="field-error" id="error-pago-productos"></span>
+          </div>
+
+          <div class="radio-group">
+            <span class="radio-group-label">Pago del Envío *</span>
+            <label class="radio-option">
+              <input type="radio" name="pago-envio" value="anticipado" />
+              <span>Pago Previo</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="pago-envio" value="contraentrega" />
+              <span>Pago Contraentrega</span>
+            </label>
+            <span class="field-error" id="error-pago-envio"></span>
+          </div>
+
+          <div class="cart-summary-totals">
+            <div class="summary-row">
+              <span>Subtotal productos</span>
+              <span id="summary-subtotal">$0</span>
+            </div>
+            <div class="summary-row">
+              <span>Envío</span>
+              <span id="summary-shipping">Selecciona ciudad y forma de pago del envío</span>
+            </div>
+            <div class="summary-row summary-total-row">
+              <span>Total</span>
+              <span id="summary-total">$0</span>
+            </div>
+          </div>
+
+          <p class="field-error" id="cart-form-error"></p>
+
+          <button type="button" class="btn-send-whatsapp" id="submit-order-btn">
+            Enviar por WhatsApp
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart-page.js"></script>
+  <script>
+    renderHeader("inner");
+    renderMobileNavOverlay();
+    renderSidebar(null);
+    renderFooter();
+    renderCartPage();
+  </script>
+</body>
+</html>

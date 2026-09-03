@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fika Store Colombia | Cuadros Personalizados y Regalos</title>
+
+  <meta
+    name="description"
+    content="Cuadros personalizados para parejas, mamá, papá, álbumes y diplomas. Diseños únicos y envíos a toda Colombia."
+  />
+
+  <meta name="robots" content="index, follow" />
+
+  <link rel="canonical" href="https://fikastore.store/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fika Store Colombia | Cuadros Personalizados" />
+  <meta
+    property="og:description"
+    content="Cuadros personalizados y regalos para momentos especiales. Envíos a toda Colombia."
+  />
+  <meta property="og:image" content="https://fikastore.store/images/LogoFikaStore.svg" />
+  <meta property="og:url" content="https://fikastore.store/" />
+  <meta property="og:site_name" content="Fika Store Colombia" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/Logo-Fika-Store-Circular.png">
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+
+
+<body>
+
+  <header class="site-header" id="site-header"></header>
+
+  <nav class="main-menu" id="main-menu">
+    <div class="main-menu-inner">
+      <a href="index.html" class="main-menu-link active">Inicio</a>
+      <a href="categoria.html?cat=cuadros-parejas" class="main-menu-link">Para Parejas</a>
+      <a href="categoria.html?cat=cuadros-albumes" class="main-menu-link">Álbumes</a>
+      <a href="categoria.html?cat=cuadros-mama" class="main-menu-link">Para Mamá</a>
+      <a href="categoria.html?cat=cuadros-papa" class="main-menu-link">Para Papá</a>
+      <a href="categoria.html?cat=cuadros-diplomas" class="main-menu-link">Diplomas</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="promo-banner" id="promo-banner"></section>
+
+    <section class="section">
+      <h2 class="section-title">Los Favoritos del Público</h2>
+      <div class="bestsellers-row" id="bestsellers-row"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">Nuestras Colecciones</h2>
+      <div class="categories-grid" id="categories-grid"></div>
+    </section>
+
+    <section class="cod-section" id="cod-section"></section>
+
+    <section class="section payments-section">
+      <h2 class="section-title">Pagos Seguros</h2>
+      <div class="payment-methods-row" id="payment-methods-row"></div>
+    </section>
+
+    <section class="section reviews-section">
+      <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+      <div class="reviews-grid" id="reviews-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    renderHeader("home");
+    renderFooter();
+    renderHome();
+  </script>
+</body>
+</html>
