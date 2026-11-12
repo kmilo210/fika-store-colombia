@@ -143,6 +143,67 @@ function setProductSEO(product) {
 }
 
 
+function setCategorySEO(category, products = []) {
+  // URL canónica de la categoría
+  const categoryUrl = new URL("/categoria.html", SITE_URL);
+  categoryUrl.searchParams.set("cat", category.slug);
+
+  const canonicalUrl = categoryUrl.href;
+
+  // Imagen de la categoría o del primer producto
+  const mainImage =
+    category.image ||
+    products[0]?.images?.[0] ||
+    products[0]?.image;
+
+  // Título SEO
+  const title =
+    category.seoTitle ||
+    `${category.name} | Fika Store Colombia`;
+
+  // Descripción SEO
+  const description =
+    category.seoDescription ||
+    `Descubre nuestra colección de ${category.name.toLowerCase()}. Encuentra productos personalizados en Fika Store Colombia.`
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 155);
+
+  document.title = title;
+
+  // Indexación
+  setRobots(
+    category.seo === false
+      ? "noindex, nofollow"
+      : "index, follow"
+  );
+
+  // Meta description
+  setMetaContent(
+    'meta[name="description"]',
+    description
+  );
+
+  // Canonical
+  setCanonical(canonicalUrl);
+
+  // Open Graph
+  setMetaProperty("og:title", title);
+  setMetaProperty("og:description", description);
+  setMetaProperty("og:url", canonicalUrl);
+
+  if (mainImage) {
+    const imageUrl = new URL(
+      mainImage,
+      SITE_URL + "/"
+    ).href;
+
+    setMetaProperty("og:image", imageUrl);
+  }
+}
+
+
+
 function setProductSchema(product) {
 
   /*
