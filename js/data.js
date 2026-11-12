@@ -47,6 +47,10 @@ const PRODUCTS = [
     name: "Cuadro con Foto y Canción Spotify",
     price: 42000,
     salePrice: 34000,
+
+    seoTitle: "Cuadro Foto y Canción Personalizada | Fika Store",
+    seoDescription: "Dedica una canción a esa persona especial acompañada de su foto favorita. Diseño especial de 24 x 33 cm, fabricado en madera sintética y acrílico protector. Envíos a Colombia.",
+    
     category: "cuadros-parejas",
     images: [
       "images/Parejas/M1/1001_Ikea_M1.png",
@@ -73,6 +77,10 @@ const PRODUCTS = [
     name: "Cuadro Collage Corazón",
     price: 42000,
     salePrice: 34000,
+
+    seoTitle: "Cuadro Collage Fotos Corazón | Fika Store",
+    seoDescription: "Una recopilación de sus mejores momentos enmarcados en forma de corazón. Diseño especial de 24 x 33 cm, fabricado en madera sintética y acrílico protector. Envíos a Colombia.",
+    
     category: "cuadros-parejas",
     images: ["images/Parejas/M1/1003_Ikea_M1.png", "images/Parejas/M4/1003_Ikea_M4.png", "images/MedidasCuadroIkea.png"],
     description: "Un recuerdo lleno de momentos especiales. Este cuadro personalizado reúne hasta 16 de tus fotos favoritas, acompañadas de los nombres, una fecha importante y un mensaje corto para crear un detalle único y lleno de significado. ❤️\n\n📸 Para personalizarlo necesitamos:\n\n• Hasta 16 fotos.\n• Nombres.\n• Fecha especial.\n• 1 mensaje corto.\n\n📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
@@ -286,7 +294,11 @@ const PRODUCTS = [
   {
     id: "mama-01",
     name: "Cuadro Para Mamá REF-01",
+    
     price: 42000,
+    seoTitle: "Cuadro personalizado para mamá con foto | Fika Store",
+    seoDescription: "Regala a mamá un cuadro personalizado con su foto y nombre. Diseño especial de 24 x 33 cm, fabricado en madera sintética y acrílico protector. Envíos a Colombia.",
+    
     category: "cuadros-mama",
     images: ["images/Mamá/M3/Mamá_01_M3.png", "images/MedidasCuadroIkea.png"],
     description: "Un detalle hecho para celebrar a mamá y agradecerle por todo su amor. ❤️ \n\n📸 Para personalizarlo necesitamos:\n\n• 1 Foto.\n• Nombre de la mamá \n\n📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",

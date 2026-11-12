@@ -76,56 +76,55 @@ function setRobots(content) {
 
 function setProductSEO(product) {
 
-  const productUrl =
-    `${SITE_URL}/producto.html?id=${product.id}`;
+  const productUrl = new URL(
+    "/producto.html",
+    SITE_URL
+  );
 
-  const imageUrl =
-    `${SITE_URL}/${product.images[0]}`;
+  productUrl.searchParams.set("id", product.id);
 
+  const canonicalUrl = productUrl.href;
+
+  const mainImage = product.images?.[0] || product.image;
+
+  const imageUrl = new URL(
+    mainImage,
+    SITE_URL + "/"
+  ).href;
+
+  // Título SEO personalizado o generado automáticamente
   const title =
+    product.seoTitle ||
     `${product.name} | Fika Store Colombia`;
 
+  // Descripción SEO personalizada o alternativa
   const description =
-    `${product.name} personalizado. ` +
-    `${product.description} ` +
-    `Precio: ${formatPrice(getEffectivePrice(product))}. ` +
-    `Envíos a toda Colombia.`;
+    product.seoDescription ||
+    `${product.name}. ${product.description}`
+      .replace(/\s+/g, " ")
+      .trim()
+      .slice(0, 155);
 
   document.title = title;
 
-  /*
-   * Control de indexación
-   */
-  if (product.seo === false) {
+  // Control de indexación
+  setRobots(
+    product.seo === false
+      ? "noindex, nofollow"
+      : "index, follow"
+  );
 
-    setRobots("noindex, nofollow");
-
-  } else {
-
-    setRobots("index, follow");
-
-  }
-
-  /*
-   * Meta description
-   */
+  // Meta description
   setMetaContent(
     'meta[name="description"]',
     description
   );
 
-  /*
-   * URL canónica
-   */
-  setCanonical(productUrl);
+  // Canonical
+  setCanonical(canonicalUrl);
 
-  /*
-   * Open Graph
-   */
-  setMetaProperty(
-    "og:title",
-    title
-  );
+  // Open Graph
+  setMetaProperty("og:title", title);
 
   setMetaProperty(
     "og:description",
@@ -139,56 +138,10 @@ function setProductSEO(product) {
 
   setMetaProperty(
     "og:url",
-    productUrl
+    canonicalUrl
   );
 }
 
-
-function setCategorySEO(category) {
-
-  const categoryUrl =
-    `${SITE_URL}/categoria.html?cat=${category.slug}`;
-
-  const title =
-    `${category.name} Personalizados | Fika Store Colombia`;
-
-  const description =
-    `Descubre ${category.name.toLowerCase()} ` +
-    `personalizados en Fika Store Colombia. ` +
-    `Diseños únicos y regalos especiales con ` +
-    `envíos a toda Colombia.`;
-
-  document.title = title;
-
-  setRobots("index, follow");
-
-  setMetaContent(
-    'meta[name="description"]',
-    description
-  );
-
-  setCanonical(categoryUrl);
-
-  setMetaProperty(
-    "og:title",
-    title
-  );
-
-  setMetaProperty(
-    "og:description",
-    description
-  );
-
-  setMetaProperty(
-    "og:image",
-    `${SITE_URL}/${category.image}`
-  );
-
-  setMetaProperty(
-    "og:url",
-    categoryUrl
-  );
-}
 
 function setProductSchema(product) {
 
