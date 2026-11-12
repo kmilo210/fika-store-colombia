@@ -41,6 +41,18 @@ function getCart() {
   }
 }
 
+function isProductOnSale(product) {
+  return Number.isFinite(Number(product.salePrice)) &&
+    Number(product.salePrice) > 0 &&
+    Number(product.salePrice) < Number(product.price);
+}
+
+function getEffectivePrice(product) {
+  return isProductOnSale(product)
+    ? Number(product.salePrice)
+    : Number(product.price);
+}
+
 function saveCart(cart) {
   try {
     sessionStorage.setItem(CART_KEY, JSON.stringify(cart));
@@ -52,18 +64,26 @@ function saveCart(cart) {
 
 function addToCart(product, qty = 1) {
   const cart = getCart();
+
   const existing = cart.find(item => item.id === product.id);
+
+  const effectivePrice = getEffectivePrice(product);
+
   if (existing) {
     existing.qty += qty;
+    existing.price = effectivePrice;
+    existing.originalPrice = Number(product.price);
   } else {
     cart.push({
       id: product.id,
       name: product.name,
-      price: product.price,
+      price: effectivePrice,
+      originalPrice: Number(product.price),
       image: product.images ? product.images[0] : product.image,
       qty: qty
     });
   }
+
   saveCart(cart);
 }
 

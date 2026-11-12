@@ -1317,3 +1317,98 @@ button {
   width: 19px;
   height: 19px;
 }
+
+
+/* =========================================
+   PRECIOS PROMOCIONALES
+========================================= */
+
+/* Etiqueta OFERTA en las tarjetas */
+.product-card-image {
+  position: relative;
+}
+
+.product-sale-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #7c3aed;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  z-index: 2;
+}
+
+/* Precios en tarjetas */
+.product-card-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.product-card-price-old,
+.product-detail-price-old,
+.cart-item-price-old,
+.cart-item-subtotal-old {
+  color: #999;
+  text-decoration: line-through;
+  font-size: 0.88em;
+  font-weight: 400;
+}
+
+.product-card-price-current.sale,
+.product-detail-price-current.sale {
+  color: #b42318;
+  font-weight: 700;
+}
+
+/* Precio en página individual */
+.product-detail-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.product-sale-badge-detail {
+  background: #7c3aed;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* Precios en carrito */
+.cart-item-prices {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.cart-item-price-old {
+  font-size: 13px;
+}
+
+.cart-item-unit-price {
+  color: #b42318;
+  font-weight: 600;
+}
+
+.cart-item-subtotal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-weight: 600;
+}
+
+.cart-item-subtotal-old {
+  font-size: 12px;
+}
+

@@ -46,6 +46,7 @@ const PRODUCTS = [
     id: "1001",
     name: "Cuadro con Foto y Canción Spotify",
     price: 34000,
+    salePrice: 30000,
     category: "cuadros-parejas",
     images: [
       "images/Parejas/M1/1001_Ikea_M1.png",

@@ -88,7 +88,7 @@ function setProductSEO(product) {
   const description =
     `${product.name} personalizado. ` +
     `${product.description} ` +
-    `Precio: ${formatPrice(product.price)}. ` +
+    `Precio: ${formatPrice(getEffectivePrice(product))}. ` +
     `Envíos a toda Colombia.`;
 
   document.title = title;
@@ -258,7 +258,7 @@ function setProductSchema(product) {
 
       "priceCurrency": "COP",
 
-      "price": product.price,
+      "price": getEffectivePrice(product),
 
       "availability":
         "https://schema.org/InStock"
@@ -531,30 +531,59 @@ function renderHome() {
 
 /* --------------------------- Tarjeta de producto (reutilizable) --------------------------- */
 function productCardHTML(p) {
-  const msg = `Hola, quiero pedir el producto: ${p.name} (${formatPrice(p.price)})`;
+  const effectivePrice = getEffectivePrice(p);
+  const onSale = isProductOnSale(p);
+
+  const msg = `Hola, quiero pedir el producto: ${p.name} (${formatPrice(effectivePrice)})`;
+
   const mainImage = p.images ? p.images[0] : p.image;
+
   return `
     <div class="product-card">
+
       <a href="producto.html?id=${p.id}" class="product-card-image">
+
         <img
           src="${mainImage}"
           alt="${p.name} personalizado — ${STORE.name}"
           loading="lazy"
         />
+
+        ${onSale ? `
+          <span class="product-sale-badge">OFERTA</span>
+        ` : ""}
+
       </a>
+
       <div class="product-card-body">
-        <a href="producto.html?id=${p.id}" class="product-card-name">${p.name}</a>
-        <div class="product-card-price">${formatPrice(p.price)}</div>
-        
+
+        <a href="producto.html?id=${p.id}" class="product-card-name">
+          ${p.name}
+        </a>
+
+        <div class="product-card-price">
+
+          ${onSale ? `
+            <span class="product-card-price-old">
+              ${formatPrice(p.price)}
+            </span>
+          ` : ""}
+
+          <span class="${onSale ? "product-card-price-current sale" : ""}">
+            ${formatPrice(effectivePrice)}
+          </span>
+
+        </div>
+
         <div class="product-card-actions">
 
           <a class="btn-pedir" href="${waLink(msg)}" target="_blank" rel="noopener">
             ${whatsappIconSVG} <span>Pedir</span>
           </a>
 
-          <button 
-            type="button" 
-            class="btn-add-cart-card" 
+          <button
+            type="button"
+            class="btn-add-cart-card"
             data-product-id="${p.id}"
             aria-label="Agregar ${p.name} al carrito"
           >
@@ -667,7 +696,10 @@ function renderProductPage() {
   currentQty = 1;
 
   const images = product.images && product.images.length ? product.images : [product.image];
-  const msg = `Hola, quiero pedir el producto: ${product.name} (${formatPrice(product.price)})`;
+  const effectivePrice = getEffectivePrice(product);
+  const onSale = isProductOnSale(product);
+
+  const msg = `Hola, quiero pedir el producto: ${product.name} (${formatPrice(effectivePrice)})`;
 
   setProductSEO(product);
 
@@ -695,7 +727,23 @@ function renderProductPage() {
     <div class="product-detail-info">
       <p class="product-detail-breadcrumb"><a href="categoria.html?cat=${product.category}">${categoryName(product.category)}</a></p>
       <h1>${product.name}</h1>
-      <div class="product-detail-price">${formatPrice(product.price)}</div>
+      <div class="product-detail-price">
+
+        ${onSale ? `
+          <span class="product-detail-price-old">
+            ${formatPrice(product.price)}
+          </span>
+        ` : ""}
+
+        <span class="${onSale ? "product-detail-price-current sale" : ""}">
+          ${formatPrice(effectivePrice)}
+        </span>
+
+        ${onSale ? `
+          <span class="product-sale-badge-detail">OFERTA</span>
+        ` : ""}
+
+      </div>
       <p class="product-detail-description">${product.description.replace(/\n/g, "<br>")}</p>
 
       <div class="qty-selector">

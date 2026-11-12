@@ -44,7 +44,19 @@ function renderCartItems() {
       <img src="${item.image}" alt="${item.name}" class="cart-item-image" />
       <div class="cart-item-info">
         <div class="cart-item-name">${item.name}</div>
-        <div class="cart-item-unit-price">${formatPrice(item.price)} c/u</div>
+        <div class="cart-item-prices">
+
+          ${item.originalPrice > item.price ? `
+            <span class="cart-item-price-old">
+              ${formatPrice(item.originalPrice)}
+            </span>
+          ` : ""}
+
+          <span class="cart-item-unit-price">
+            ${formatPrice(item.price)} c/u
+          </span>
+
+        </div>
         <div class="cart-item-qty">
           <button type="button" class="cart-qty-btn" data-action="minus" data-id="${item.id}" aria-label="Restar">−</button>
           <span>${item.qty}</span>
@@ -52,7 +64,19 @@ function renderCartItems() {
         </div>
       </div>
       <div class="cart-item-right">
-        <div class="cart-item-subtotal">${formatPrice(item.price * item.qty)}</div>
+        <div class="cart-item-subtotal">
+
+          ${item.originalPrice > item.price ? `
+            <span class="cart-item-subtotal-old">
+              ${formatPrice(item.originalPrice * item.qty)}
+            </span>
+          ` : ""}
+
+          <span>
+            ${formatPrice(item.price * item.qty)}
+          </span>
+
+        </div>
         <button type="button" class="cart-item-remove" data-id="${item.id}" aria-label="Eliminar producto">Eliminar</button>
       </div>
     </div>
@@ -265,9 +289,22 @@ function handleSubmitOrder() {
 
   msg += `*PRODUCTOS*\n`;
   cart.forEach(item => {
-    msg += `• ${item.name} x${item.qty} — ${formatPrice(item.price * item.qty)}\n`;
-  });
 
+    if (item.originalPrice > item.price) {
+
+      msg +=
+        `• ${item.name} x${item.qty}\n` +
+        `  Precio original: ${formatPrice(item.originalPrice * item.qty)}\n` +
+        `  Precio de oferta: ${formatPrice(item.price * item.qty)}\n`;
+
+    } else {
+
+      msg +=
+        `• ${item.name} x${item.qty} — ${formatPrice(item.price * item.qty)}\n`;
+
+    }
+
+  });
   msg += `\n*RESUMEN DEL PAGO*\n`;
   msg += `• Productos: ${formatPrice(subtotal)}\n`;
 
