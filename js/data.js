@@ -43,7 +43,7 @@ const PRODUCTS = [
    
   ------------------------------------------------------------------------- */
   {
-    id: "1001",
+    id: "cuadro-foto-cancion-spotify",
     name: "Cuadro con Foto y Canción Spotify",
     price: 42000,
     salePrice: 34000,
@@ -73,7 +73,7 @@ const PRODUCTS = [
     seo: true
   },
   {
-    id: "1003",
+    id: "cuadro-collage-corazon",
     name: "Cuadro Collage Corazón",
     price: 42000,
     salePrice: 34000,
