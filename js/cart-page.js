@@ -101,6 +101,7 @@ function getSelectedCity() {
 /* Edita estos textos si quieres cambiar la descripción que ve el cliente
    al elegir cada forma de pago para los productos. */
 const PAYMENT_PRODUCT_DESCRIPTIONS = {
+  contraentrega: "Paga el valor del producto cuando llegue a tus manos",
   anticipado: "Envía los datos de tu pedido por WhatsApp. Te compartiremos los medios de pago disponibles (Nequi, Bancolombia, PayPal y otros) para realizar el pago y confirmar tu pedido."
 };
 
@@ -202,6 +203,7 @@ function validateCartForm() {
 
   const requiredTextFields = [
     { id: "input-nombre", label: "el nombre de quien recibe" },
+    { id: "input-cedula", label: "la cedula" },
     { id: "input-telefono", label: "el teléfono" },
     { id: "input-direccion", label: "la dirección" },
     { id: "input-barrio", label: "el barrio" },
@@ -263,6 +265,7 @@ function paymentLabel(value) {
   return value === "anticipado" ? "Pago anticipado" : "Pago contraentrega";
 }
 
+
 function handleSubmitOrder() {
   if (!validateCartForm()) {
     const firstError = document.querySelector(".invalid") || document.getElementById("cart-form-error");
@@ -272,58 +275,63 @@ function handleSubmitOrder() {
 
   const cart = getCart();
   const city = getSelectedCity();
+
   const pagoProductos = getSelectedRadioValue("pago-productos");
   const pagoEnvio = getSelectedRadioValue("pago-envio");
-  const shippingCost = pagoEnvio === "anticipado" ? city.shippingPrepaid : city.shippingCOD;
+
   const subtotal = cartSubtotal();
+
+  const shippingCost = pagoEnvio === "anticipado"
+    ? city.shippingPrepaid
+    : city.shippingCOD;
+
+  // Calcular cuánto se paga ahora y cuánto al recibir
+  const productosPagarAhora = pagoProductos === "anticipado" ? subtotal : 0;
+  const envioPagarAhora = pagoEnvio === "anticipado" ? shippingCost : 0;
+
+  const productosPagarRecibir = pagoProductos === "contraentrega" ? subtotal : 0;
+  const envioPagarRecibir = pagoEnvio === "contraentrega" ? shippingCost : 0;
+
+  const totalPagarAhora = productosPagarAhora + envioPagarAhora;
+  const totalPagarRecibir = productosPagarRecibir + envioPagarRecibir;
+
   const total = subtotal + shippingCost;
 
   const nombre = document.getElementById("input-nombre").value.trim();
+  const cedula = document.getElementById("input-cedula").value.trim();
   const telefono = document.getElementById("input-telefono").value.trim();
   const direccion = document.getElementById("input-direccion").value.trim();
   const barrio = document.getElementById("input-barrio").value.trim();
   const observaciones = document.getElementById("input-observaciones").value.trim();
 
-  
   let msg = `Hola, quiero confirmar el siguiente pedido:\n\n`;
 
   msg += `*PRODUCTOS*\n`;
+
   cart.forEach(item => {
-
     if (item.originalPrice > item.price) {
-
       msg +=
         `• ${item.name} x${item.qty}\n` +
         `  Precio original: ${formatPrice(item.originalPrice * item.qty)}\n` +
         `  Precio de oferta: ${formatPrice(item.price * item.qty)}\n`;
-
     } else {
-
-      msg +=
-        `• ${item.name} x${item.qty} — ${formatPrice(item.price * item.qty)}\n`;
-
+      msg += `• ${item.name} x${item.qty} — ${formatPrice(item.price * item.qty)}\n`;
     }
-
   });
-  msg += `\n*RESUMEN DEL PAGO*\n`;
-  msg += `• Productos: ${formatPrice(subtotal)}\n`;
 
-  if (pagoEnvio === "anticipado") {
-    msg += `• Envío: ${formatPrice(shippingCost)}\n`;
-  } else {
-    msg += `• Envío Contraentrega: ${formatPrice(shippingCost)}\n`;
-  }
+  msg += `\n*RESUMEN DEL PEDIDO*\n`;
+  msg += `• Subtotal productos: ${formatPrice(subtotal)}\n`;
+  msg += `• Envío: ${formatPrice(shippingCost)}\n`;
+  msg += `• Total del pedido: ${formatPrice(total)}\n`;
 
-  const totalPagarAhora = pagoEnvio === "anticipado"
-    ? subtotal + shippingCost
-    : subtotal;
 
-  const envioPagarAlRecibir = pagoEnvio === "anticipado"
-    ? 0
-    : shippingCost;
+  msg += `\n*RESUMEN DE PAGO*\n`;
+  msg += `*TOTAL A PAGAR AHORA: ${formatPrice(totalPagarAhora)}*\n`;
+  msg += `*TOTAL A PAGAR AL RECIBIR: ${formatPrice(totalPagarRecibir)}*\n`;
 
   msg += `\n*DATOS DE ENTREGA*\n`;
   msg += `• Nombre: ${nombre}\n`;
+  msg += `• Cédula: ${cedula}\n`;
   msg += `• Teléfono: ${telefono}\n`;
   msg += `• Ciudad: ${city.name}\n`;
   msg += `• Dirección: ${direccion}\n`;
@@ -333,12 +341,6 @@ function handleSubmitOrder() {
     msg += `• Observaciones: ${observaciones}\n`;
   }
 
-  msg += `\n*TOTAL A PAGAR AHORA: ${formatPrice(totalPagarAhora)}*\n`;
-  msg += `*VALOR DEL ENVÍO A PAGAR AL RECIBIR: ${formatPrice(envioPagarAlRecibir)}*\n`;
-
-  
-
-
   const link = waLink(msg);
   window.open(link, "_blank", "noopener");
 
@@ -347,9 +349,8 @@ function handleSubmitOrder() {
   recalculateTotals();
 
   const cartErrorEl = document.getElementById("cart-form-error");
-  if (cartErrorEl) {
-    cartErrorEl.textContent = "";
-  }
+  if (cartErrorEl) cartErrorEl.textContent = "";
+
   const successEl = document.getElementById("cart-success-message");
   if (successEl) {
     successEl.style.display = "block";

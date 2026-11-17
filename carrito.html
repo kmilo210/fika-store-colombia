@@ -43,6 +43,12 @@
             <span class="field-error" id="error-input-nombre"></span>
           </div>
 
+          <div class="form-field">
+            <label for="input-cedula">Cedula o Número de Identificación *</label>
+            <input type="text" id="input-cedula" />
+            <span class="field-error" id="error-input-cedula"></span>
+          </div>
+
 
           <div class="form-field">
             <label for="input-telefono">Teléfono *</label>
@@ -90,6 +96,10 @@
             <label class="radio-option">
               <input type="radio" name="pago-productos" value="anticipado" />
               <span>Pago Previo a la Elaboración</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="pago-productos" value="contraentrega" />
+              <span>Pago Contraentrega</span>
             </label>
             <p class="payment-method-description" id="pago-productos-description"></p>
             <span class="field-error" id="error-pago-productos"></span>

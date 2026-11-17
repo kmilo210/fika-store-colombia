@@ -971,15 +971,15 @@ const PRODUCTS = [
    - shippingCOD: costo de envío si el cliente paga el envío contraentrega
 ------------------------------------------------------------------------- */
 const CITIES = [
-  { name: "Bogotá",       shippingPrepaid: 16500, shippingCOD: 18500 },
-  { name: "Medellín",     shippingPrepaid: 10500, shippingCOD: 12500 },
-  { name: "Cali",         shippingPrepaid: 10000, shippingCOD: 10000 },
-  { name: "Barranquilla", shippingPrepaid: 16500, shippingCOD: 18500 },
-  { name: "Cartagena",    shippingPrepaid: 16500, shippingCOD: 18500 },
-  { name: "Bucaramanga",  shippingPrepaid: 16500, shippingCOD: 18500 },
-  { name: "Pereira",      shippingPrepaid: 16500, shippingCOD: 18500 },
-  { name: "Caldas Antioquia", shippingPrepaid: 10500, shippingCOD: 12500 },
-  { name: "Otra ciudad",  shippingPrepaid: 16500, shippingCOD: 18500 }
+  { name: "Bogotá",       shippingPrepaid: 18500, shippingCOD: 20750 },
+  { name: "Medellín",     shippingPrepaid: 12500, shippingCOD: 14750 },
+  { name: "Cali",         shippingPrepaid: 8800, shippingCOD: 11050 },
+  { name: "Barranquilla", shippingPrepaid: 18500, shippingCOD: 20750 },
+  { name: "Cartagena",    shippingPrepaid: 18500, shippingCOD: 20750 },
+  { name: "Bucaramanga",  shippingPrepaid: 18500, shippingCOD: 20750},
+  { name: "Pereira",      shippingPrepaid: 18500, shippingCOD: 20750 },
+  { name: "Caldas Antioquia", shippingPrepaid: 12500, shippingCOD: 14750 },
+  { name: "Otra (Escribir en observaciones)",  shippingPrepaid: 20900, shippingCOD: 23150 }
 ];
 
 /* -------------------------------------------------------------------------
