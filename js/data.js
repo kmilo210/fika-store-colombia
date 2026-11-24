@@ -557,392 +557,392 @@ const PRODUCTS = [
   {
     id: "cuadro-1989-ts",
     name: "Cuadro 1989 (TS)",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/1989_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/1989_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-5202-duki",
     name: "Cuadro 5202 - Duki",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/5202_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/5202_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-ameri",
     name: "Cuadro Ameri",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Ameri_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Ameri_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-astroworld",
     name: "Cuadro Astroworld",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Astroworld_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Astroworld_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-cosa-nuestra",
     name: "Cuadro Cosa Nuestra",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/CosaNuestra_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/CosaNuestra_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-vida-muerte",
     name: "Cuadro Vida Muerte",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/VidaMuerte_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/VidaMuerte_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: true,
     seo: false
   },
   {
     id: "cuadro-dangerous",
     name: "Cuadro Dangerous",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Dangerous_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Dangerous_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-dtmf-bad-bunny",
     name: "Cuadro DTMF - Bad Bunny",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/DTMF_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/DTMF_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-en-dormir-sin-madrid",
     name: "Cuadro En Dormir Sin Madrid",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/EnDormirSinMadrid_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/EnDormirSinMadrid_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-short-n-sweet",
     name: "Cuadro Short N Sweet",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/ShortNSweet_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/ShortNSweet_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-estado-de-enlace",
     name: "Cuadro Estado De Enlace",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/EstadoDeEnlace_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/EstadoDeEnlace_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-eternal-sunshine",
     name: "Cuadro Eternal Sunshine",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/EternalSunshine_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/EternalSunshine_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-Ferxxocalipsis",
     name: "Cuadro Ferxxocalipsis",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Ferxxocalipsis_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Ferxxocalipsis_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-ferxxo-sky-las-9",
     name: "Cuadro Las 9 de Ferxxo y Sky",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/FerxxoSky_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/FerxxoSky_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-flak-daniels",
     name: "Cuadro Flak Daniel's",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/FlakDaniels_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/FlakDaniels_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-four-deluxe",
     name: "Cuadro Four Deluxe",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/FourDeluxe_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/FourDeluxe_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-hit-me-hard-and-soft",
     name: "Cuadro Hit Me Hard and Soft",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/HitMe_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/HitMe_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-hot-space",
     name: "Cuadro Hot Space",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/HotSpace_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/HotSpace_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-inter-shibuya",
     name: "Cuadro Inter Shibuya",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Intershibuya_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Intershibuya_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-l3tra-2",
     name: "Cuadro L3TRA 2",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/L3TRA2_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/L3TRA2_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-la-bomba-de-ziroshima",
     name: "Cuadro La Bomba de Ziroshima",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/LaBombaHiroshima_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/LaBombaHiroshima_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-la-nave-del-olvido",
     name: "Cuadro La Nave Del Olvido",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/LaNaveDelOlvido_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/LaNaveDelOlvido_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-la-nube-en-el-jardin",
     name: "Cuadro La Nube En El Jardin",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/LaNubeEnElJardin_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/LaNubeEnElJardin_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-las-leyendas-nunca-mueren",
     name: "Cuadro Las Leyendas Nunca Mueren",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/LasLeyendasNuncaMueren_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/LasLeyendasNuncaMueren_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-nadie-sabe-bad-bunny",
     name: "Cuadro Nadie sabe Lo que va a pasar mañana",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/NadieSabe_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/NadieSabe_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-nectar",
     name: "Cuadro Nectar",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Nectar_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Nectar_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-oscuro-extasis",
     name: "Cuadro Oscuro Extasis",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/OscuroExtasis_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/OscuroExtasis_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
   {
     id: "cuadro-dangerous",
     name: "Cuadro Dangerous",
-    price: 68500,
-    salePrice: 48000,
+    price: 53000,
+    salePrice: 37000,
     category: "cuadros-albumes",
     images: [
-      "images/Albumes/M5/Dangerous_Ikea_M5.png",
-      "images/MedidasCuadroIkea_23_32.png"
+      "images/Albumes/M3/Dangerous_Ikea_M3.png",
+      "images/MedidasCuadroIkea.png"
     ],
-    description: "📏 Medidas: 23 × 32 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
+    description: "📏 Medidas: 24 × 33 cm\n⚒️ Materiales: Madera sintética y acrílico protector.\n🚚 Envío: 2 a 5 días hábiles.",
     bestseller: false,
     seo: false
   },
